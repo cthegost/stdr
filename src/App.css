@@ -1,0 +1,364 @@
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("SF Pro Display Medium.eot");
+  src: url("SF Pro Display Medium.eot?#iefix") format("embedded-opentype"), url("SF Pro Display Medium.woff2") format("woff2"), url("SF Pro Display Medium.woff") format("woff"), url("SF Pro Display Medium.svg#SF Pro Display Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("SF Pro Display Light.eot");
+  src: url("SF Pro Display Light.eot?#iefix") format("embedded-opentype"), url("SF Pro Display Light.woff2") format("woff2"), url("SF Pro Display Light.woff") format("woff"), url("SF Pro Display Light.svg#SF Pro Display Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+.App {
+  text-align: center;
+}
+
+.back {
+  background: url(../src/assets/google-hq.jpg) no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcome-name {
+  font-family: 'Noto Sans', sans-serif;
+  color: white;
+  font-size: 4rem;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(139, 137, 137, 0.7);
+  box-shadow: 3px -7px 18px 10px black;
+}
+
+.today-back {
+  background: url(../src/assets/success.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100vh;
+}
+
+.rotate-shadows {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+}
+
+.rotate-shadows:after,
+.rotate-shadows:before {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center center;
+}
+
+.rotate-shadows:before {
+  box-shadow: inset 0 5px 0 rgba(0, 250, 250, 0.6), inset 5px 0 0 rgba(0, 200, 200, 0.6), inset 0 -5px 0 rgba(0, 150, 200, 0.6), inset -5px 0 0 rgba(0, 200, 250, 0.6);
+  animation: rotate-before 2s -0.5s linear infinite;
+}
+
+.rotate-shadows:after {
+  box-shadow: inset 0 5px 0 rgba(250, 250, 0, 0.6), inset 5px 0 0 rgba(250, 200, 0, 0.6), inset 0 -5px 0 rgba(250, 150, 0, 0.6), inset -5px 0 0 rgba(250, 100, 0, 0.6);
+  animation: rotate-after 2s -0.5s linear infinite;
+}
+
+@keyframes rotate-after {
+  0% {
+    transform: rotateZ(0deg) scaleX(1) scaleY(1);
+  }
+  50% {
+    transform: rotateZ(180deg) scaleX(0.82) scaleY(0.95);
+  }
+  100% {
+    transform: rotateZ(360deg) scaleX(1) scaleY(1);
+  }
+}
+
+@keyframes rotate-before {
+  0% {
+    transform: rotateZ(0deg) scaleX(1) scaleY(1);
+  }
+  50% {
+    transform: rotateZ(-180deg) scaleX(0.95) scaleY(0.85);
+  }
+  100% {
+    transform: rotateZ(-360deg) scaleX(1) scaleY(1);
+  }
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  font-size: 132%;
+  color: white;
+  width: 6rem;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+.brand:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.events {
+  min-height: 100vh;
+  width: 100%;
+  background: url(../src/assets/events.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.events-name {
+  color: white;
+}
+
+.events-name h2 {
+  font-size: 3rem;
+}
+
+.events-name p {
+  font-size: 1.5rem;
+}
+
+.news {
+  height: 15rem;
+  background: white;
+}
+
+.today-name h2 {
+  font-size: 3rem;
+}
+
+.today-name p {
+  font-size: 1.5rem;
+}
+
+.row {
+  margin-top: 2rem;
+}
+
+.startup {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  box-sizing: border-box;
+  outline: none;
+  position: relative;
+  background: white;
+}
+
+.startup .content {
+  text-align: center;
+}
+
+.startup .content h2 {
+  font-size: 12vw;
+  font-weight: 900;
+  line-height: 1em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url(../src/assets/startup.jpg);
+  background-attachment: fixed;
+}
+
+.startup .content p {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.startup .content a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  text-decoration: none;
+  color: #000;
+  margin-top: 20px;
+}
+
+.withus {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../src/assets/withus.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.withus .withus-name h2 {
+  font-size: 10rem;
+}
+
+.withus .withus-name p {
+  font-size: 1.5rem;
+}
+
+.webdev {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../src/assets/webdev.png) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.webname {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.webname h2 {
+  font-size: 3rem;
+  font-family: SF-Pro Medium,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+  font-weight: 700;
+}
+
+.webname p {
+  width: 59rem;
+  line-height: 1.6;
+  font-size: 1.3rem;
+  text-align: center;
+  font-family: SF-Pro Light,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+  font-weight: 100;
+  margin-top: 1rem;
+}
+
+.marketing {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../src/assets/marketing.jpeg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.marktabout {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.marktabout h2 {
+  font-size: 3rem;
+  font-family: SF-Pro Medium,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+  font-weight: 700;
+}
+
+.marktabout p {
+  width: 59rem;
+  line-height: 1.6;
+  font-size: 1.3rem;
+  text-align: center;
+  font-family: SF-Pro Light,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+  font-weight: 100;
+  margin-top: 1rem;
+}
+
+.webabout {
+  height: 35vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.webabout .card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.webabout .card-container .web-card {
+  border: 2px solid #005f98;
+  padding: 9px;
+  width: 27rem;
+  margin: 0 2%;
+  height: 6rem;
+}
+
+.webabout .card-container .web-card h3 {
+  font-family: SF-Pro Medium,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.webabout .card-container .web-card p {
+  font-family: SF-Pro Light,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+  color: #515558;
+  font-weight: 300;
+  font-size: .825rem;
+}
+
+.webabout a {
+  text-decoration: none;
+  border: 2px solid #007bff;
+  padding: 0.7rem;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.webabout a:hover {
+  background-color: #007bff;
+  text-decoration: none;
+  color: white;
+}
