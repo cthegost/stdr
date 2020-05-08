@@ -1,17 +1,21 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import createBrowserHistory from "history/createBrowserHistory";
+
 
 import Home from "../Pages/Home";
 import About from "../Pages/About";
 import Courses from "../Pages/Courses";
 
+
+const history = createBrowserHistory();
 export class Wrapper extends Component {
   render() {
     return (
       <div>
-        <Router>
+        <Router history={history}>
           <Switch>
-            <Route exact path="/home" component={ Home } />
+            <Route exact path="/" component={ Home } />
             <Route exact path="/about" component={ About } />
             <Route exact path="/courses" component={ Courses } />
           </Switch>

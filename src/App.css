@@ -23,7 +23,7 @@
 }
 
 .back {
-  background: url(../src/assets/google-hq.jpg) no-repeat;
+  background: url(../src/assets/moscow.jpg) no-repeat;
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -56,7 +56,7 @@
 }
 
 .today-back {
-  background: url(../src/assets/success.jpg);
+  background: url(../src/assets/success.jpeg);
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
@@ -361,4 +361,25 @@
   background-color: #007bff;
   text-decoration: none;
   color: white;
+}
+
+.gedalia {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./assets/gedalia.jpg) no-repeat;
+  background-size: cover;
+}
+
+.gedalia .about {
+  width: 80%;
+  height: 24rem;
+  background: rgba(237, 237, 237, 0.7);
+}
+
+.gedalia .about p {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
 }
