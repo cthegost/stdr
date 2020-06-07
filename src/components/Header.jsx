@@ -15,7 +15,7 @@ export class Header extends Component {
                 <Nav.Link href="/"> Главная </Nav.Link>
                 <Nav.Link href="/courses"> Все курсы </Nav.Link>
                 <Nav.Link href="/about"> О нас </Nav.Link>
-                <Nav.Link href="/blog"> Blog </Nav.Link>
+                <Nav.Link href="/startup"> START UP </Nav.Link>
           </Nav>
         </Navbar>
       </div>

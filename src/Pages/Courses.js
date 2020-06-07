@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { WebDev } from '../components/WebDev'
 import Marketing from '../components/Marketing'
 import Webabout from '../components/Webabout'
+import Appdev from '../components/Appdev'
 
 export default class Courses extends Component {
     render() {
@@ -10,6 +11,7 @@ export default class Courses extends Component {
                 <WebDev />
                 <Webabout />
                 <Marketing />
+                <Appdev />
             </div>
         )
     }

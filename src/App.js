@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Header } from "./components/Header";
 import { Wrapper } from "./components/Wrapper";
 import { BrowserRouter } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <div className="App">
         <Header />
         <Wrapper />
+        <Footer />
       </div>
     </BrowserRouter>
   );

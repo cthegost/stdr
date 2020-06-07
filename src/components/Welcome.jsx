@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Container, Image } from "react-bootstrap";
 
 export class Welcome extends Component {
   render() {

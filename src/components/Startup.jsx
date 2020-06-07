@@ -19,7 +19,7 @@ export class Startup extends Component {
             illum, libero aliquam, inventore saepe quos, necessitatibus nostrum
             sed voluptate fugit labore. Reiciendis?
           </p>
-          <a href="#">Read More</a>
+          <a href="/startup">Read More</a>
         </div>
       </div>
     );
